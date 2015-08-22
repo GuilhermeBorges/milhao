@@ -11,10 +11,10 @@ Image credits: unsplash.com
 /********************************/
 .fade-carousel {
     position: relative;
-    height: 50vh;
+    height: 60vh;
 }
 .fade-carousel .carousel-inner .item {
-    height: 50vh;
+    height: 60vh;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
@@ -102,7 +102,7 @@ Image credits: unsplash.com
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
-  height: 50vh;
+  height: 60vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -120,8 +120,8 @@ Image credits: unsplash.com
 /********************************/
 /*          Media Queries       */
 /********************************/
-@media screen and (min-width: 940px){
-    .hero { width: 940px; }    
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
 }
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
