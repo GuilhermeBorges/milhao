@@ -35,13 +35,14 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Sobre nós <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#aboutcorn">Produto</a></li>
-		        <li><a href="#localizacao">Localização</a></li>
+		        
 		        
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		       	<li><a href="#">Contato</a></li>
+		      <li><a href="#">Sobre nós <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#aboutcorn">Produto</a></li>
+		        <li><a href="#localizacao">Localização</a></li>
+		       	<li class="active"><a href="#">Contato</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -255,8 +256,8 @@
 	var marker = new google.maps.Marker({
 	    position: myLatlng,
 	    title:"Fazenda Santa Maria",
-	    // icon: "img/milhao_logo_marker.png"
-	    icon: "img/milho_marker.png"
+	    icon: "img/milhao_logo_marker.png"
+	    // icon: "img/milho_marker.png"
 	});
 
 	// To add the marker to the map, call setMap();
