@@ -1,16 +1,100 @@
-.navbar {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	color: #eb1c22;
-    position: relative;
+/*
+------------------------------------
+----- COLOR ------------------------
+------------------------------------
+*/
+
+/*red1: #eb1c22*/
+
+
+/*
+------------------------------------
+----- NAVBAR -----------------------
+------------------------------------
+*/
+
+/*Changeing size of the navbar*/
+.navbar-brand,
+.navbar-toggle,
+.collapsed,
+.navbar-default,
+.navbar-nav li a {
+    line-height: 80px;
     height: 80px;
-    margin-bottom: 0px;
-    border: 1px solid transparent;
+    padding-top: 0;
+    border-bottom: 0px;
+
+    /*Changing color of the default navbar*/
+    color: #eb1c22;
+    background-color: #FFF;
 }
 
-.navbar .navbar-brand{
+/*Changing active colors*/
 
-	color: #eb1c22;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #FFF;
+    background-color: #eb1c22;
+}
+
+
+/*Changing text color*/
+
+.navbar-default .navbar-nav>li>a {
+    color: #eb1c22;
+    /*font-size: 20px;*/
+}
+
+.navbar-default .navbar-brand {
+    color: #eb1c22;
+    /*font-size: 20px;*/
+}
+
+/*Button on the right -> when its on the cellphone*/
+.navbar-toggle {
+	margin:0px;
+	border:0px;
+}
+
+
+/*When its on the cellphone:'(*/
+@media (max-width: 768px) {
+	.navbar-brand,
+	.navbar-toggle,
+	.collapsed,
+	.navbar-default,
+	.navbar-nav li a {
+	    line-height: 50px;
+	    height: 50px;
+	    padding-top: 0;
+	    border-bottom: 0px;
+	    color: #eb1c22;
+    	/*font-size: 20px;*/
+    	margin:0px;
+		}
+	.navbar-default .navbar-brand {
+    color: #eb1c22;
+    /*font-size: 30px;*/
+	}
+}
+
+/*
+------------------------------------
+----- Content (Body)-----------------
+------------------------------------
+*/
+
+#carousel{
+	/*This is necessary due to the fixed-top attribute on the navbar*/
+	/*padding-top: 80px;*/
+	margin-top: 80px;
+}
+/*When its on the cellphone:'(*/
+@media (max-width: 768px) {
+	#carousel{
+	/*This is necessary due to the fixed-top attribute on the navbar*/
+	/*padding-top: 80px;*/
+	margin-top: 50px;
+	}
 }
 
 #aboucorn{
