@@ -75,6 +75,12 @@
     color: #eb1c22;
     /*font-size: 30px;*/
 	}
+
+	/*Logo is not working very well, discover why!*/
+	#logo {
+		height: 100%;
+		content:url("../img/soomilho_logo_cell.png");
+	}
 }
 
 /*
