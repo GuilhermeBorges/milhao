@@ -79,10 +79,14 @@
 
 /*
 ------------------------------------
------ Content (Body)-----------------
+----- Content (Body)----------------
 ------------------------------------
 */
 
+
+/*
+----- Carousel ---------------------
+*/
 #carousel{
 	/*This is necessary due to the fixed-top attribute on the navbar*/
 	/*padding-top: 80px;*/
@@ -95,6 +99,11 @@
 	/*padding-top: 80px;*/
 	margin-top: 50px;
 	}
+}
+
+.milhao {
+	color: #eb1c22;
+	font-weight: bold;
 }
 
 #aboucorn{
@@ -113,11 +122,23 @@
 }
 
 
+/*
+----- Localização ---------------------
+*/
 #localizacao{
-	background-color: #fff;
-	height: 200px;
+	/*background-color: #fff;*/
+	/*height: 200px;*/
 }
 
+#map{
+	height: 400px;
+	width: 100%;
+	background-color: #CCC;
+}
+
+/*
+----- Footer ---------------------
+*/
 #footer{
 	/*background-color: #eb1c22;*/
 	height: 200px;
