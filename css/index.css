@@ -78,8 +78,8 @@
 
 	/*Logo is not working very well, discover why!*/
 	#logo {
-		height: 100%;
-		content:url("../img/soomilho_logo_cell.png");
+		padding: 0px;
+		content:url("../img/soomilho_cell.png");
 	}
 }
 
