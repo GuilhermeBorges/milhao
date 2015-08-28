@@ -5,13 +5,20 @@
 */
 
 /*red1: #eb1c22*/
-
+/*gray:#41424a*/
+/*green:#4B8868*/
+/*black:#303137*/
+/*bege:#f5e2ae*/
 
 /*
 ------------------------------------
 ----- NAVBAR -----------------------
 ------------------------------------
 */
+
+body h1{
+	color:#4B8868;
+}
 
 /*Changeing size of the navbar*/
 .navbar-brand,
@@ -32,8 +39,16 @@
 /*Changing active colors*/
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #FFF;
-    background-color: #eb1c22;
+    /*color: #FFF;*/
+    /*background-color: #eb1c22;*/
+    /*background-color: #4B8868;*/
+    background-color: #FFF;
+    border: 1px solid #4B8868;
+    color: #4B8868;
+/*    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    height: 60px;*/
 }
 
 
@@ -55,6 +70,11 @@
 	border:0px;
 }
 
+.navbar{
+		-webkit-box-shadow:0px 1px 10px #888;
+ -moz-box-shadow:0px 1px 10px #888;
+ box-shadow:0px 1px 10px #888;
+}
 
 /*When its on the cellphone:'(*/
 @media (max-width: 768px) {
@@ -112,15 +132,6 @@
 	font-weight: bold;
 }
 
-#aboucorn{
-	/*color: #fff;*/
-	/*background-color: #eb1c22;*/
-}
-
-#aboutus{
-	background-color: #fff;
-	
-}
 
 #contato{
 	/*background-color: #eb1c22;*/
@@ -146,7 +157,51 @@
 /*
 ----- Footer ---------------------
 */
-#footer{
-	/*background-color: #eb1c22;*/
-	height: 200px;
+
+
+/*red1: #eb1c22*/
+/*gray:#41424a*/
+/*green:#4B8868*/
+/*black:#303137*/
+
+
+#footer_content{
+	/*background-color: #4B8868;*/
+	background-color: #ba1c1c;
+	height: 125px;
+
 }
+
+#footer_content h4{
+	padding-top: 40px;
+}
+#footer_content img {
+	padding-top: 10px;
+}
+
+#lower_footer{
+	/*background-color: #ba1c1c;*/
+	background-color: #303137;
+	height: 25px;
+}
+
+#footer{
+	margin-top: 10%;
+    width: 100%;
+}
+.footer{
+	color:#fff;
+	/*color:#fcca1b;*/
+	text-align: center;
+}
+
+				
+
+
+
+
+
+
+
+
+
