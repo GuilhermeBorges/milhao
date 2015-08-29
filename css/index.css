@@ -8,7 +8,7 @@
 /*gray:#41424a*/
 /*green:#4B8868*/
 /*black:#303137*/
-/*bege:#f5e2ae*/
+/*bege:#f9f3e7*/
 
 /*
 ------------------------------------
@@ -17,8 +17,11 @@
 */
 body h1{
 	color:#4B8868;
+	/*font-style: bold;*/
 	/*font-family: 'Indie Flower', cursive;*/
+	font-family: 'Finger Paint', cursive;
 }
+
 
 /*Changeing size of the navbar*/
 .navbar-brand,
@@ -129,36 +132,49 @@ body h1{
 	}
 }
 
+.c_section{
+	height:100%;
+}
+
+.conteudo{
+	padding-top: 80px;
+}
+
 /*
 ---------Aboutus--------------------
 */
 
 #aboutus{
-	padding-top: 80px;
+	
+	background-color: #f9f3e7;
+	
 }
+
 /*
 -------------Contato-----------------
 */
 
 #contato{
-
-	padding-top: 80px;
+	
+	background-color: #FFF;
 
 }
+
 
 
 /*
 ----- Localização ---------------------
 */
 #localizacao{
-	padding-top: 80px;
+	background-color: #f9f3e7;	
 }
 
 #map{
 	height: 350px;
 	width: 100%;
-	background-color: #CCC;
+	
 }
+
 
 /*
 ----- Footer ---------------------
