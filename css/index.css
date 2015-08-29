@@ -112,15 +112,16 @@
 	font-weight: bold;
 }
 
-#aboucorn{
-	/*color: #fff;*/
-	/*background-color: #eb1c22;*/
+/*
+#aboutcorn{
+	color: #fff;
+	background-color: #000;
 }
 
 #aboutus{
-	background-color: #fff;
+	background-color: #000;
 	
-}
+}*/
 
 #contato{
 	/*background-color: #eb1c22;*/
@@ -132,10 +133,10 @@
 /*
 ----- Localização ---------------------
 */
-#localizacao{
-	/*background-color: #fff;*/
-	/*height: 200px;*/
-}
+/*#localizacao{
+	background-color: #fff;
+	/*height: 200px;
+}*/
 
 #map{
 	height: 400px;
