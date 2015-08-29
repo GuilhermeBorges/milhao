@@ -1,0 +1,54 @@
+/*
+------------------------------------
+----- COLOR ------------------------
+------------------------------------
+*/
+
+/*red1: #eb1c22*/
+/*gray:#41424a*/
+/*green:#4B8868*/
+/*black:#303137*/
+/*bege:#f9f3e7*/
+
+
+/*
+----- Footer ---------------------
+*/
+
+
+/*red1: #eb1c22*/
+/*gray:#41424a*/
+/*green:#4B8868*/
+/*black:#303137*/
+
+
+#footer_content{
+	/*background-color: #4B8868;*/
+	background-color: #ba1c1c;
+	height: 125px;
+
+}
+
+#footer_content h4{
+	padding-top: 40px;
+}
+#footer_content img {
+	padding-top: 10px;
+}
+#lower_footer{
+	/*background-color: #ba1c1c;*/
+	background-color: #303137;
+	height: 25px;
+}
+
+#footer{
+	margin-top: 10%;
+    width: 100%;
+}
+.footer{
+	color:#fff;
+	/*color:#fcca1b;*/
+	text-align: center;
+}
+
+				
