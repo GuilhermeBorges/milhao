@@ -8,10 +8,10 @@ Image credits: unsplash.com
 /********************************/
 .fade-carousel {
     position: relative;
-    height: 60vh;
+    height: 70vh;
 }
 .fade-carousel .carousel-inner .item {
-    height: 60vh;
+    height: 70vh;
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
@@ -42,6 +42,12 @@ Image credits: unsplash.com
           -ms-transform: translate3d(-50%,-50%,0);
            -o-transform: translate3d(-50%,-50%,0);
               transform: translate3d(-50%,-50%,0);
+}
+
+.hero img {
+  float: left;
+  padding: 0;
+  margin:0;
 }
 .hero h1 {
     font-size: 6em;    
@@ -76,7 +82,7 @@ Image credits: unsplash.com
     height: 100%;
     z-index: 2;
     background-color: #080d15;
-    opacity: .7;
+    opacity: 0.5;
 }
 
 /********************************/
@@ -99,20 +105,23 @@ Image credits: unsplash.com
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
-  height: 60vh;
+  height: 70vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818); 
+  /*background-image: url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818); */
+  background-image: url(../img/carousel-1.1.jpg); 
 }
+
 .fade-carousel .slides .slide-2 {
-  background-image: url(http://blog.doctoroz.com/wp-content/uploads/2013/04/AP_04_15_2013_42767469_L.jpg);
- /* background-image: url(https://ununsplash.imgix.net/photo-1416339684178-3a239570f315?q=75&fm=jpg&s=c39d9a3bf66d6566b9608a9f1f3765af);*/
+  background-image: url(../img/carousel-3.jpg);
 }
+
 .fade-carousel .slides .slide-3 {
-  background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+  background-image: url(../img/carousel-2.jpg);
+ /* background-image: url(https://ununsplash.imgix.net/photo-1416339684178-3a239570f315?q=75&fm=jpg&s=c39d9a3bf66d6566b9608a9f1f3765af);*/
 }
 
 /********************************/
