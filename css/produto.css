@@ -80,13 +80,37 @@
 		content:url("../img/soomilho_cell.png");
 	}
 }
+/*
+------------------img----------------
+*/
+
+#imagemdomilho {
+  background-image: url("../img/carousel-1.jpg");
+  /*height: 500px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+   position: relative;
+    height: 70vh;
+}
+
+/*
+---------aboutcorn-----------------
+*/
+
+#aboutcorn{
+	padding-top: 80px;
+	font-family: 'Sniglet', cursive;
+	font-size: 30px;
+}
 
 .milhao {
 	color: #eb1c22;
 	font-weight: bold;
 }
 
-
+/*
+----------footer-------------------
+*/
 #footer_content{
 	/*background-color: #4B8868;*/
 	background-color: #ba1c1c;
