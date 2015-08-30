@@ -62,29 +62,40 @@
 			
 	</div><!-- header -->
 
+
+
+	<div  class="parallax-container">
+  		<div class="parallax">
+  	
+  			<img src="img/aboutus1.jpg">
+  		</div>
+  			<!-- <h1>PLANTIO</h1> -->
+	</div>
+
 	<div class= "row">
 
-		<div id = "conteudo" class="col-md-10 col-md-offset-1">
+		<div id = "conteudo" class="col-md-10 col-md-offset-1 conteudo">
 
 			<div id = "aboutcorn" name = "aboutcorn">
 				<div class = "jambotron">
 						<div class="col-sm-12 col-md-12">
-							<h1>Milhão</h1>
+							<h1>Santa Maria Produtos Alimentícios Ltda</h1>
 						</div>
 						<div class="col-sm-8 col-md-8">
 							<p>
 							A <span class = "stamaria">Santa Maria Produtos Alimentícios Ltda</span>, é uma empresa que tem por objetivo, colocar no mercado, produtos diferenciados e com qualidade.
+							</p>
+							<p>
 							Tem como preocupação principal, o consumidor, onde sua opinião é fundamental para o desenvolvimento do nosso produto e corresponder ás suas expectativas.
 							A Santa Maria Produtos Alimentícios Ltda, tem como produto principal o MILHÃO, milho doce embalado a vácuo e cozido, com sede da Empresa localizada no município de Tupaciguara – MG, à Rodovia MG 452, Km 52, na Fazenda Santa Maria, de propriedade do Sr. Adevanir de Lima, onde é iniciado o processo de plantio e condução de lavouras de milho doce e depois realizado o processo de embalagem e distribuição pela Santa Maria Produtos Alimentícios Ltda.
 							A Empresa iniciou sua atividade produtiva em 17/08/2015 com 11 colaboradores.
 							A Empresa irá atuar inicialmente em Araguari – MG, um projeto piloto de área comercial, se estendendo a todo território nacional em breve e para o futuro, o mercado Internacional.
 
-
 							</p>
 						</div>
 						<div class="col-sm-4 col-md-4">
 							<div class="thumbnail">
-								<img src="img/foto 3.jpg" alt="100%x200">
+								<img src="img/FAZ. SANTA MARIA LOGO.jpg" alt="100%x200">
 							</div>
 				      	</div>
 					</div>
@@ -115,7 +126,73 @@
 			Copyright 2015 - WebDeveloper. Jessiane contato syane_andrade@outlook.com
 		</div>
 	</div><!--Footer-->
+<script type="text/javascript">
+	(function ($) {
 
+	    $.fn.parallax = function () {
+	      var window_width = $(window).width();
+	      // Parallax Scripts
+	      return this.each(function(i) {
+	        var $this = $(this);
+	        $this.addClass('parallax');
+
+	        function updateParallax(initial) {
+	          var container_height;
+	          if (window_width < 601) {
+	            container_height = ($this.height() > 0) ? $this.height() : $this.children("img").height();
+	          }
+	          else {
+	            container_height = ($this.height() > 0) ? $this.height() : 500;
+	          }
+	          var $img = $this.children("img").first();
+	          var img_height = $img.height();
+	          var parallax_dist = img_height - container_height;
+	          var bottom = $this.offset().top + container_height;
+	          var top = $this.offset().top;
+	          var scrollTop = $(window).scrollTop();
+	          var windowHeight = window.innerHeight;
+	          var windowBottom = scrollTop + windowHeight;
+	          var percentScrolled = (windowBottom - top) / (container_height + windowHeight);
+	          var parallax = Math.round((parallax_dist * percentScrolled));
+
+	          if (initial) {
+	            $img.css('display', 'block');
+	          }
+	          if ((bottom > scrollTop) && (top < (scrollTop + windowHeight))) {
+	            $img.css('transform', "translate3D(-50%," + parallax + "px, 0)");
+	          }
+
+	        }
+
+	        // Wait for image load
+	        $this.children("img").one("load", function() {
+	          updateParallax(true);
+	        }).each(function() {
+	          if(this.complete) $(this).load();
+	        });
+
+	        $(window).scroll(function() {
+	          window_width = $(window).width();
+	          updateParallax(false);
+	        });
+
+	        $(window).resize(function() {
+	          window_width = $(window).width();
+	          updateParallax(false);
+	        });
+
+	      });
+
+	    };
+	}( jQuery ));;
+
+
+
+	// Running parallax
+	$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+</script>
 
 
 </body>

@@ -34,17 +34,18 @@
 	font-family: 'Finger Paint', cursive;
 	font-size: 50px;
 }
-/*
-#aboutcorn{
-	height: 80%;
+
+.aboutcorn{
+	background-image: url(../img/palha-repeat-clara.jpg);
+	background-repeat: repeat;
 }
 
-#plantio{
-	height: 80%;
-}
-*/
+
+
 #comofazer{
 	padding-bottom: 10%;
+/*	background-image: url(../img/palha-repeat-clara.jpg);
+	background-repeat: repeat;*/
 }
 .milhao {
 	color: #eb1c22;
