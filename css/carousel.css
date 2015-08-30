@@ -1,4 +1,17 @@
 /*
+------------------------------------
+----- COLOR ------------------------
+------------------------------------
+*/
+
+/*red1: #eb1c22*/
+/*gray:#41424a*/
+/*green:#4B8868*/
+/*black:#303137*/
+/*bege:#f9f3e7*/
+
+
+/*
 Fade content bs-carousel with hero headers
 Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
 Image credits: unsplash.com
@@ -54,6 +67,22 @@ Image credits: unsplash.com
     font-weight: bold;
     margin: 0;
     padding: 0;
+/*    color: #FFF;
+    text-shadow: 0 0 3px #eb1c22, 0 0 5px #000;*/
+    color: #eb1c22;
+    /*text-shadow: 0 0 3px #eb1c22, 0 0 5px #000;*/
+}
+
+.hero h3{
+    /*color: #e28100;*/
+
+
+    color: #FFF;
+    text-shadow: 0 0 3px #eb1c22, 0 0 5px #000;
+    /*font-family: 'Sniglet', cursive;*/
+    font-family: 'Finger Paint', cursive;
+    font-size: 30px;
+
 }
 
 .fade-carousel .carousel-inner .item .hero {
