@@ -101,7 +101,7 @@ body h3{
 #localizacao{
 	background-image: url(../img/palha-repeat-clara.jpg);
 	background-repeat: repeat;	
-	
+	height: 850px;
 }
 
 #map{
