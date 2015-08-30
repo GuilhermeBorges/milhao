@@ -16,10 +16,26 @@
 ---------aboutcorn-----------------
 */
 
-#aboutcorn{
-	padding-top: 80px;
+.conteudo{
 	font-family: 'Sniglet', cursive;
 	font-size: 30px;
+	padding-top: 50px;
+	height: 80%;
+}
+
+.conteudo h1{
+	text-align: center;
+	padding-bottom: 5%;
+	color:#4B8868;
+	/*font-style: bold;*/
+	/*font-family: 'Indie Flower', cursive;*/
+	font-family: 'Finger Paint', cursive;
+	font-size: 50px;
+}
+
+#aboutcorn{
+	/*padding-top: 80px;*/
+	/*height: 100%;*/
 }
 
 .milhao {
@@ -58,4 +74,48 @@
 	color:#fff;
 	/*color:#fcca1b;*/
 	text-align: center;
+}
+
+
+
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 350px; 
+
+}
+
+.parallax-container h1{
+	font-family: 'Finger Paint', cursive;
+	color: #fff;
+	text-shadow: 0 0 3px #eb1c22, 0 0 5px #000;
+	text-align: center;
+	padding-top: 70px;
+	font-size: 500%;
+}
+
+
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; }
+  .parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transform: translateX(-50%); }
+
+
+#first_image {
+	margin-top: 80px;
 }

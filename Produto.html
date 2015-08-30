@@ -5,11 +5,21 @@
 	<title>Milhão!</title>
 	
 
+	<!-- Materializa -->
+	  <!-- Compiled and minified CSS -->
+<!-- 	  
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+
+	  Compiled and minified JavaScript
+	  // <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script> -->
+    
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/produto.css">
+
 
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -19,6 +29,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Sniglet:400,800' rel='stylesheet' type='text/css'>
+
+
+
 </head>
 <body>
 	<div id = "header">
@@ -60,13 +73,23 @@
 			</nav>
 			
 	</div><!-- header -->
-	<div id="imagemdomilho">
-     <!-----eu só queria por a porra de uma imagem!!!!!-->
-    </div> 
+	
+
+<!-- 	<div id="imagemdomilho">
+     ---eu só queria por a porra de uma imagem!!!!!
+    </div>  -->
+
+	<div id='first_image' class="parallax-container">
+  		<div class="parallax">
+  	
+  			<img src="img/carousel-1.jpg">
+  		</div>
+  			<!-- <h1>PLANTIO</h1> -->
+	</div>
 
 	<div class= "row">
 
-		<div id = "conteudo" class="col-md-10 col-md-offset-1">
+		<div id = "conteudo" class="col-md-10 col-md-offset-1 conteudo">
 
 			<div id = "aboutcorn" name = "aboutcorn">
 				<div class = "jambotron">
@@ -75,7 +98,7 @@
 						</div>
 						<div class="col-sm-12 col-md-12">
 							<p>
-							<span class = "milhao">MILHÃO</span>, é o milho doce embalado a vácuo, cozido, sem conservantes, sem amido, com tecnologia de processamento buscada na Alemanha, adequando o produto ao clima e ao mercado Brasileiro. Atualmente o produto tem uma validade de 30 dias após a data de fabricação, sendo que em fase de testes, já estamos em 17/08/2015, com produto estocado refrigerado há 90 dias, sem perca de sabor e qualidade.
+							<span class = "milhao">MILHÃO</span>, é o milho doce embalado a vácuo, cozido, sem conservantes, sem amido, com tecnologia de processamento buscada na Alemanha, adequando o produto ao clima e ao mercado Brasileiro.
 
 							</p>
 						</div>
@@ -88,12 +111,69 @@
 			</div><!--about corn-->
 
 		</div><!--counteudo-->
+		<div class="col-md-2 col-sm-2"></div>
 	</div><!--row-->
 
 
+	<div class="parallax-container">
+  		<div class="parallax">
+  	
+  			<img src="img/Plantio.jpg">
+  		</div>
+  			<h1>PLANTIO</h1>
+	</div>
+
+	<div class= "row">
+
+		<div class="col-md-10 col-md-offset-1 conteudo">
+
+				<div class = "jambotron">
+						<div class="col-sm-12 col-md-12">
+							<h1>Origem da matéria prima</h1>
+						</div>
+						<div class="col-sm-12 col-md-12">
+							<p>
+							O milho é plantado e a lavoura conduzida pelo Sr. Adevanir de Lima, proprietário da Fazenda Santa Maria.<!--  localizada na Rpdpvia MG 452, Km52 - Zona Rural- Tupaciguara - MG, --> Tendo o cliclo da cultura concluído, é realizada a colheira manual, onde é pré-selecionado e encaminhado ao setor de preparação de matéria prima.
+
+							</p>
+						</div>
+				</div>
+
+		</div>
+		<div class="col-md-2 col-sm-2"></div>
+	</div><!--row-->
+
+	<div class="parallax-container">
+  		<div class="parallax">
+  	
+  			<img src="img/milhodesen2.jpg">
+  		</div>
+  			<h1>MATÉRIA PRIMA</h1>
+	</div>
+
+	<div class= "row">
+
+<!-- 		<div class="col-md-10 col-md-offset-1 conteudo">
+
+				<div class = "jambotron">
+						<div class="col-sm-12 col-md-12">
+							<h1>Qualidade</h1>
+						</div>
+						<div class="col-sm-12 col-md-12">
+							<p>
+							Recebido a matéria prima, é padronizado o tamanho através de corte manuel em guilhotina, realizado o descasque manual, a retirada dos tubos polínicos (cabelos) e encaminhada ao setor de seleção.
+
+							</p>
+						</div>
+				</div>
+
+		</div>
+		<div class="col-md-2 col-sm-2"></div>
+	</div><!--row--> -->
+
 	<br>
 
-	<div id= "footer" class = "footer">
+	<div id= "footer2" class = "footer2">
 
 		<div id="footer_content" class ="row">
 
@@ -113,6 +193,75 @@
 		</div>
 	</div><!--Footer-->
 
+
+
+<script type="text/javascript">
+	(function ($) {
+
+	    $.fn.parallax = function () {
+	      var window_width = $(window).width();
+	      // Parallax Scripts
+	      return this.each(function(i) {
+	        var $this = $(this);
+	        $this.addClass('parallax');
+
+	        function updateParallax(initial) {
+	          var container_height;
+	          if (window_width < 601) {
+	            container_height = ($this.height() > 0) ? $this.height() : $this.children("img").height();
+	          }
+	          else {
+	            container_height = ($this.height() > 0) ? $this.height() : 500;
+	          }
+	          var $img = $this.children("img").first();
+	          var img_height = $img.height();
+	          var parallax_dist = img_height - container_height;
+	          var bottom = $this.offset().top + container_height;
+	          var top = $this.offset().top;
+	          var scrollTop = $(window).scrollTop();
+	          var windowHeight = window.innerHeight;
+	          var windowBottom = scrollTop + windowHeight;
+	          var percentScrolled = (windowBottom - top) / (container_height + windowHeight);
+	          var parallax = Math.round((parallax_dist * percentScrolled));
+
+	          if (initial) {
+	            $img.css('display', 'block');
+	          }
+	          if ((bottom > scrollTop) && (top < (scrollTop + windowHeight))) {
+	            $img.css('transform', "translate3D(-50%," + parallax + "px, 0)");
+	          }
+
+	        }
+
+	        // Wait for image load
+	        $this.children("img").one("load", function() {
+	          updateParallax(true);
+	        }).each(function() {
+	          if(this.complete) $(this).load();
+	        });
+
+	        $(window).scroll(function() {
+	          window_width = $(window).width();
+	          updateParallax(false);
+	        });
+
+	        $(window).resize(function() {
+	          window_width = $(window).width();
+	          updateParallax(false);
+	        });
+
+	      });
+
+	    };
+	}( jQuery ));;
+
+
+
+	// Running parallax
+	$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+</script>
 
 
 </body>
