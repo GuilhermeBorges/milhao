@@ -9,15 +9,19 @@
 	color:#4B8868;
 	font-family: 'Finger Paint', cursive;
 }*/
+.palha{
+	background-image: url(../img/palha-repeat-clara.jpg);
+	background-repeat: repeat;
+}
 
 .conteudo{
 	font-family: 'Sniglet', cursive;
 	font-size: 150%;
-	padding-top: 80px;
-	/*padding-bottom: 50px;*/
-	height: 750px;
+	/*padding-top: 80px;*/
+	height:  100%;
 	text-align: justify;
-	padding-bottom: 80px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 .conteudo h1{

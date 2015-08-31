@@ -42,11 +42,28 @@
 
 
 
-#comofazer{
-	/*padding-bottom: 20px;*/
-	/*height: 1000px;*/
 
+
+.comofazer{
+	font-family: 'Sniglet', cursive;
+	font-size: 30px;
+	padding-top: 50px;
+	/*padding-bottom: 50px;*/
+	height: 100%;
+	text-align: center;
 }
+
+.comofazer h1{
+	text-align: center;
+	padding-bottom: 5%;
+	color:#4B8868;
+	/*font-style: bold;*/
+	/*font-family: 'Indie Flower', cursive;*/
+	font-family: 'Finger Paint', cursive;
+	font-size: 50px;
+}
+
+
 .milhao {
 	color: #eb1c22;
 	font-weight: bold;
@@ -70,7 +87,9 @@
 	font-size: 500%;
 }
 
-
+.corConcreta{
+	background-color: #FAF6E1;
+}
 
 .parallax {
   position: absolute;
