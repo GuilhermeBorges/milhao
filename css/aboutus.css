@@ -9,6 +9,12 @@
 	color:#4B8868;
 	font-family: 'Finger Paint', cursive;
 }*/
+
+#header a:hover {
+	font-style: normal;
+    color: #4B8868;
+}
+
 .palha{
 	background-image: url(../img/palha-repeat-clara.jpg);
 	background-repeat: repeat;
