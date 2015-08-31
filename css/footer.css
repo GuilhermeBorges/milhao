@@ -25,13 +25,18 @@
 #footer_content{
 	/*background-color: #4B8868;*/
 	background-color: #ba1c1c;
-	height: 125px;
+	height: 130px;
 
 }
 
-#footer_content h4{
-	padding-top: 40px;
+#footer_content h4, a{
+
+	padding-top: 5px;
+	color : #fff;
 }
+
+
+
 #footer_content img {
 	padding-top: 10px;
 }
@@ -45,21 +50,15 @@
 	/*margin-top: 10%;*/
     width: 100%;
 }
+
 .footer{
+	position: absolute;
+	font-family: 'Sniglet', cursive;
+	font-size: 15px;
 	color:#fff;
 	/*color:#fcca1b;*/
 	text-align: center;
 }
 
-
-#footer2{
-	/*margin-top: 10%;*/
-    width: 100%;
-}
-.footer2{
-	color:#fff;
-	/*color:#fcca1b;*/
-	text-align: center;
-}
 
 				

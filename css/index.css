@@ -37,14 +37,26 @@ body h1{
 	font-family: 'Finger Paint', cursive;
 	font-size: 50px;
 }
-body h3{
+body h3, a{
 	color:#4B8868;
 	/*font-style: bold;*/
 	/*font-family: 'Indie Flower', cursive;*/
 	font-family: 'Finger Paint', cursive;
 }
 
+#fb{
+	padding-top: 40px;
+}
 
+#header a:hover {
+	font-style: normal;
+    color: #4B8868;
+}
+
+#aboutus a:hover {
+	font-style: normal;
+    color: #eb1c22;
+}
 /*
 ----- Carousel ---------------------
 */
