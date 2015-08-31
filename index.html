@@ -233,17 +233,24 @@
 								<form>
 								  <div class="form-group">
 								    <label for="exampleInputEmail1">Email address</label>
-								    <input type="email" class="form-control" id="InputEmail" placeholder="Email">
-								    <br>
+								    <input name= "inputemail" type="email" class="form-control" id="InputEmail" placeholder="Email">
+								   
+								    <label>Nome</label>
+								    <input name= "nomemail" class = "form-control" >
+
 								  </div>
-								  <select class="form-control">
-									  <option>Administrativo</option>
-									  <option>Comercial</option>
-									  <option>Financeiro</option>
-									  <option>Sac</option>
+								  <label> Destinatário</label>
+								  <select name="selectemail" class="form-control">
+									  <option value = "guilhermeborgesoliveira@gmail.com">webdesigner</option>
+									  <option value = "sandro@milhomilhao.com.br">Administrativo</option>
+									  <option value = "comercial@milhomilhao.com.br">Comercial</option>
+									  <option value = "financeiro@milhomilhao.com.br">Financeiro</option>
+									  <option value = "sac@milhomilhao.com.br">Sac</option>
 									</select>
 									  <br>
-									<textarea id="e-mail" class="form-control" rows="3"></textarea>
+									<textarea name="textareaemail" id="e-mail" class="form-control" rows="3">
+										
+									</textarea>
 								</form>
 								<br>
 								<br>
@@ -372,22 +379,22 @@ function sendMail(){
   data: {
     'key': 'bSLKKoW95M0qgJYezrf6Tw',
     'message': {
-      'from_email': 'syane_andrade@outlook.com',
+      'from_email':'syane_andrade@outlook.com',
       'to': [
           {
-            'email': 'jessiane.g.andrade@outlook.com',
-            'name': 'RECIPIENT NAME (OPTIONAL)',
+            'email': $('select[name = selectemail]').val(),
+            'name': $ ('selec[name = namemail]').val(),
             'type': 'to'
           },
           {
-            'email': 'guilhermeborgesoliveira@gmail.com',
+            'email': 'syane_andrade@outlook.com',
             'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
             'type': 'to'
           }
         ],
       'autotext': 'true',
-      'subject': 'YOUR SUBJECT HERE!',
-      'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
+      'subject': 'Milhão website',
+      'html': ( $('select[name = textareaemail]').val()).concat($ ('select[name = inputemail]').val())
     }
   }
  }).done(function(response) {
