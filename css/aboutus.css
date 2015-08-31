@@ -15,16 +15,33 @@
     color: #4B8868;
 }
 
+/*
+---------------------Gambiarra da palha-----------------
+
+body{
+	background-image: url(../img/palha-repeat-clara.jpg);
+	background-repeat: repeat;
+
+}
+*/
+/*
+------------------palha-----------------------
+*/
+
 .palha{
 	background-image: url(../img/palha-repeat-clara.jpg);
 	background-repeat: repeat;
-}
 
+}
+/*
+------------------conteudo-----------------
+*/
 .conteudo{
+	padding-top: 60px;
 	font-family: 'Sniglet', cursive;
 	font-size: 150%;
 	/*padding-top: 80px;*/
-	height:  100%;
+	height:  120%;
 	text-align: justify;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
@@ -40,6 +57,16 @@
 	font-size: 50px;
 }
 
+/*
+------------- centralizando a img -------------
+*/
+#imgstamaria{
+	padding-top: 100px;
+}
+
+/*
+--------------------parallax------------------
+*/
 .parallax-container {
 
   position: relative;
@@ -58,8 +85,6 @@
 	font-size: 500%;
 }
 
-
-
 .parallax {
   position: absolute;
   top: 0;
@@ -67,6 +92,7 @@
   right: 0;
   bottom: 0;
   z-index: -1; }
+
   .parallax img {
     display: none;
     position: absolute;
