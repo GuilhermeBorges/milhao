@@ -235,27 +235,28 @@
 								    <label for="exampleInputEmail1">Endereço de e-mail</label>
 								    <input name= "inputemail" type="email" class="form-control" id="InputEmail" placeholder="Email">
 								   <br>
+
 								    <label>Nome</label>
-								    <input name= "nomemail" class = "form-control" >
+								    <input name= "nomemail" id="nomemail" class = "form-control" >
 
 								  </div>
 								  <label> Destinatário</label>
 								  <select name="selectemail" class="form-control">
-									  <option value = "guilhermeborgesoliveira@gmail.com">webdesigner</option>
 									  <option value = "sandro@milhomilhao.com.br">Administrativo</option>
 									  <option value = "comercial@milhomilhao.com.br">Comercial</option>
 									  <option value = "financeiro@milhomilhao.com.br">Financeiro</option>
 									  <option value = "sac@milhomilhao.com.br">Sac</option>
 									</select>
 									  <br>
-									<textarea name="textareaemail" id="e-mail" class="form-control" rows="3">
+									<label>Mensagem</label>
+									<textarea name="textareaemail" id="textareaemail" class="form-control" rows="3">
 										
 									</textarea>
 								</form>
 								<br>
-								<br>
 
 									  <button id= "send" type="button" class="btn btn-success"style="width:100%" onclick="sendMail(); return false">Enviar e-mail</button>
+									  <br>
 							</div>
 						</div>
 						<div class="col-sm-4 col-md-6">
@@ -372,6 +373,8 @@
 
 
 function sendMail(){
+	textcompl = "<br> E-mail: ";
+	textcompl1 = "<br> Nome: ";
 
   $.ajax({
    type: "POST",
@@ -393,14 +396,13 @@ function sendMail(){
           }
         ],
       'autotext': 'true',
-      'subject': 'Milhão website',
-      'html': ( $('select[name = textareaemail]').val()).concat($ ('select[name = inputemail]').val())
+      'subject': 'Milhao website',
+      'html': ( $('#textareaemail').val()).concat( textcompl1 + $('#nomemail').val() + textcompl + $('#InputEmail').val() + "<br>"+ "Area de envio: " + $('select[name = selectemail]').val())
     }
   }
  }).done(function(response) {
    console.log(response); // if you're into that sorta thing
   });
-
 }
 
 

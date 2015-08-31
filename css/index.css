@@ -22,6 +22,14 @@ body p{
 	font-size: 20px;
 }
 
+body label, button, option, select, input,textarea{
+	font-family: 'Sniglet', cursive;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+
 body h1{
 	color:#4B8868;
 	/*font-style: bold;*/
@@ -83,8 +91,9 @@ body h3{
 */
 
 #contato{
+	height: 120%;
+	background-color: #FAF6E1;
 	
-	background-color: #FFF;
 
 
 }
