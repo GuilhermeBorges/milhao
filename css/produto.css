@@ -35,7 +35,7 @@
 	font-size: 50px;
 }
 
-.aboutcorn{
+.palha{
 	background-image: url(../img/palha-repeat-clara.jpg);
 	background-repeat: repeat;
 }
@@ -43,48 +43,14 @@
 
 
 #comofazer{
-	padding-bottom: 10%;
-/*	background-image: url(../img/palha-repeat-clara.jpg);
-	background-repeat: repeat;*/
+	/*padding-bottom: 20px;*/
+	/*height: 1000px;*/
+
 }
 .milhao {
 	color: #eb1c22;
 	font-weight: bold;
 }
-
-/*
-----------footer-------------------
-*/
-#footer_content{
-	/*background-color: #4B8868;*/
-	background-color: #ba1c1c;
-	height: 125px;
-
-}
-
-#footer_content h4{
-	padding-top: 40px;
-}
-#footer_content img {
-	padding-top: 10px;
-}
-
-#lower_footer{
-	/*background-color: #ba1c1c;*/
-	background-color: #303137;
-	height: 25px;
-}
-
-#footer{
-	margin-top: 10%;
-    width: 100%;
-}
-.footer{
-	color:#fff;
-	/*color:#fcca1b;*/
-	text-align: center;
-}
-
 
 
 
