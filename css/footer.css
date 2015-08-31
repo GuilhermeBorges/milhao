@@ -29,6 +29,10 @@
 
 }
 
+body a{
+	font-family: 'Finger Paint', cursive;
+}
+
 #footer_content h4, a{
 
 	padding-top: 5px;
